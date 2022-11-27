@@ -93,3 +93,43 @@ Both notebooks illustrates the use of [Gmsh](https://gmsh.info/), [FEniCSx](http
 `08-magnetic-fields.ipynb` explores the vector potential and magnetic fields in a coaxial cable with an iron ring.
 
 Notebook #8 was adapted from ["Electromagnetics example"](https://jorgensd.github.io/dolfinx-tutorial/chapter3/em.html#electromagnetics-example).
+
+
+Week 6
+------
+
+The files in this directory are
+
+```
+week-06
+└── 09-electromagnetic-waves.ipynb
+```
+
+`09-electromagnetic-waves.ipynb` explores plane wave solutions to Maxwell's equations in empty space using 3D plots and animations.
+
+To create the movie, `ffmpeg` is required.  This can be installed via `conda`:
+```
+conda install --channel conda-forge ffmpeg
+```
+The notebook will create 500 JPEG images and use `ffmpeg` to compile them into an `mp4` movie.  These files are not deleted automatically.
+
+
+Week 8
+------
+The files in this directory are
+
+```
+week-08
+├── 10-diffusion-equation.ipynb
+└── 11-wave-equation.ipynb
+```
+
+`10-diffusion-equation.ipynb` introduces the quasi-static approximation and the diffusion equation in the context of electromagnetic fields in conductors.
+
+`11-wave-equation.ipynb` presents two methods for analyzing the wave equation: real time integration and plane wave analysis with the Helmholtz equation.
+
+The notebook is written for CoLab.  It requires `dolfinx`, `pyvista`, and `ffmpeg` to run.  It may not work in other Python environments.
+
+These simulations draw heavily on the wonderful materials available from the FEniCS project:
+- [The FEniCSx tutorial](https://jorgensd.github.io/dolfinx-tutorial/index.html)
+- [FEniCSx Tutorial @ FEniCS 2022](https://jorgensd.github.io/fenics22-tutorial/intro.html)
